@@ -1,0 +1,24 @@
+<section>
+  <div class="gray-background">1</div>
+  <div *ngFor="let number of numbers;">
+
+    <div [ngClass]="{'gray-background': numbers[number] % 2 != 0}">
+
+      <div class="inline">{{numbers[number]}}</div>
+
+      <div *ngIf="isBoth(numbers[number])">
+          <div class="little-margin">
+            <div class="smiley"></div>
+            <div class="frowny"></div>
+          </div>
+      </div>
+
+      <div *ngIf="!isBoth(numbers[number])">
+        <div class="little-margin">
+          <div [ngClass]="{'smiley': numbers[number] % 3 === 0, 'frowny': numbers[number] % 5 === 0}"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

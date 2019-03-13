@@ -1,0 +1,28 @@
+.gray-background {
+    background-color: #b7b6b6;
+}
+
+.smiley {
+    position: relative;
+    display: inline-block;
+    background: url('../../assets/happy.png') no-repeat;
+    background-size: contain;
+    padding: 3%;
+}
+
+.frowny {
+    position: relative;
+    display: inline-block;
+    background: url('../../assets/sad.png') no-repeat;
+    background-size: contain;
+    padding: 3%;
+}
+
+.inline {
+    position: relative;
+    display: inline-block;
+}
+
+.little-margin {
+    margin-left: 20px;
+}
